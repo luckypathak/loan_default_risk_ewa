@@ -1,0 +1,193 @@
+{
+  "borrowers": [
+    {
+      "borrower_id": "B101",
+      "name": "Priya Sharma",
+      "assigned_analyst": "analyst1",
+      "loan": {
+        "loan_id": "L101",
+        "principal": 500000,
+        "emi_amount": 18500,
+        "outstanding_balance": 412000,
+        "interest_rate": 12.5,
+        "tenure_months": 36,
+        "emi_due_day": 5
+      },
+      "payment_history": [
+        {"month": "2025-01", "due_date": "2025-01-05", "paid_date": "2025-01-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"},
+        {"month": "2025-02", "due_date": "2025-02-05", "paid_date": "2025-02-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"},
+        {"month": "2025-03", "due_date": "2025-03-05", "paid_date": "2025-03-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"},
+        {"month": "2025-04", "due_date": "2025-04-05", "paid_date": "2025-04-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"},
+        {"month": "2025-05", "due_date": "2025-05-05", "paid_date": "2025-05-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"},
+        {"month": "2025-06", "due_date": "2025-06-05", "paid_date": "2025-06-05", "amount_due": 18500, "amount_paid": 18500, "status": "on_time"}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-06-05", "status": "success", "amount": 18500}
+      ],
+      "transactions": [
+        {"date": "2025-06-01", "type": "credit", "category": "salary", "amount": 72000},
+        {"date": "2025-05-28", "type": "debit", "category": "emi", "amount": 18500},
+        {"date": "2025-05-01", "type": "credit", "category": "salary", "amount": 71500}
+      ],
+      "credit_line": {"limit": 100000, "utilized": 22000, "utilization_history": [18000, 20000, 21000, 22000]},
+      "current_dpd": 0
+    },
+    {
+      "borrower_id": "B102",
+      "name": "Rahul Verma",
+      "assigned_analyst": "analyst1",
+      "loan": {
+        "loan_id": "L102",
+        "principal": 300000,
+        "emi_amount": 11200,
+        "outstanding_balance": 245000,
+        "interest_rate": 14.0,
+        "tenure_months": 30,
+        "emi_due_day": 10
+      },
+      "payment_history": [
+        {"month": "2025-01", "due_date": "2025-01-10", "paid_date": "2025-01-12", "amount_due": 11200, "amount_paid": 11200, "status": "late", "days_late": 2},
+        {"month": "2025-02", "due_date": "2025-02-10", "paid_date": "2025-02-10", "amount_due": 11200, "amount_paid": 11200, "status": "on_time"},
+        {"month": "2025-03", "due_date": "2025-03-10", "paid_date": "2025-03-15", "amount_due": 11200, "amount_paid": 11200, "status": "late", "days_late": 5},
+        {"month": "2025-04", "due_date": "2025-04-10", "paid_date": "2025-04-18", "amount_due": 11200, "amount_paid": 11200, "status": "late", "days_late": 8},
+        {"month": "2025-05", "due_date": "2025-05-10", "paid_date": "2025-05-22", "amount_due": 11200, "amount_paid": 11200, "status": "late", "days_late": 12},
+        {"month": "2025-06", "due_date": "2025-06-10", "paid_date": null, "amount_due": 11200, "amount_paid": 0, "status": "unpaid", "days_late": 12}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-06-10", "status": "failed", "amount": 11200, "reason": "insufficient_funds"},
+        {"date": "2025-06-12", "status": "failed", "amount": 11200, "reason": "insufficient_funds"},
+        {"date": "2025-05-10", "status": "failed", "amount": 11200, "reason": "insufficient_funds"}
+      ],
+      "transactions": [
+        {"date": "2025-06-01", "type": "credit", "category": "salary", "amount": 38000},
+        {"date": "2025-05-01", "type": "credit", "category": "salary", "amount": 45000},
+        {"date": "2025-04-01", "type": "credit", "category": "salary", "amount": 48000}
+      ],
+      "credit_line": {"limit": 80000, "utilized": 62000, "utilization_history": [35000, 42000, 51000, 62000]},
+      "current_dpd": 12
+    },
+    {
+      "borrower_id": "B103",
+      "name": "Anita Desai",
+      "assigned_analyst": "analyst2",
+      "loan": {
+        "loan_id": "L103",
+        "principal": 750000,
+        "emi_amount": 24800,
+        "outstanding_balance": 680000,
+        "interest_rate": 11.8,
+        "tenure_months": 48,
+        "emi_due_day": 1
+      },
+      "payment_history": [
+        {"month": "2025-03", "due_date": "2025-03-01", "paid_date": "2025-03-01", "amount_due": 24800, "amount_paid": 24800, "status": "on_time"},
+        {"month": "2025-04", "due_date": "2025-04-01", "paid_date": "2025-04-03", "amount_due": 24800, "amount_paid": 24800, "status": "late", "days_late": 2},
+        {"month": "2025-05", "due_date": "2025-05-01", "paid_date": "2025-05-08", "amount_due": 24800, "amount_paid": 15000, "status": "partial", "days_late": 7},
+        {"month": "2025-06", "due_date": "2025-06-01", "paid_date": null, "amount_due": 24800, "amount_paid": 0, "status": "unpaid", "days_late": 21}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-06-01", "status": "failed", "amount": 24800, "reason": "insufficient_funds"},
+        {"date": "2025-05-01", "status": "partial", "amount": 15000, "reason": "partial_debit"}
+      ],
+      "transactions": [
+        {"date": "2025-06-15", "type": "credit", "category": "freelance", "amount": 12000},
+        {"date": "2025-05-20", "type": "credit", "category": "freelance", "amount": 18000},
+        {"date": "2025-04-01", "type": "credit", "category": "salary", "amount": 55000}
+      ],
+      "credit_line": {"limit": 150000, "utilized": 98000, "utilization_history": [45000, 62000, 82000, 98000]},
+      "current_dpd": 21
+    },
+    {
+      "borrower_id": "B104",
+      "name": "Vikram Singh",
+      "assigned_analyst": "analyst2",
+      "loan": {
+        "loan_id": "L104",
+        "principal": 200000,
+        "emi_amount": 7800,
+        "outstanding_balance": 156000,
+        "interest_rate": 13.5,
+        "tenure_months": 24,
+        "emi_due_day": 15
+      },
+      "payment_history": [
+        {"month": "2025-04", "due_date": "2025-04-15", "paid_date": "2025-04-15", "amount_due": 7800, "amount_paid": 7800, "status": "on_time"},
+        {"month": "2025-05", "due_date": "2025-05-15", "paid_date": "2025-05-16", "amount_due": 7800, "amount_paid": 7800, "status": "late", "days_late": 1}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-05-15", "status": "success", "amount": 7800}
+      ],
+      "transactions": [
+        {"date": "2025-05-01", "type": "credit", "category": "salary", "amount": 42000}
+      ],
+      "credit_line": {"limit": 50000, "utilized": 8000, "utilization_history": [5000, 6000, 7000, 8000]},
+      "current_dpd": 0
+    },
+    {
+      "borrower_id": "B105",
+      "name": "Meera Patel",
+      "assigned_analyst": "analyst1",
+      "loan": {
+        "loan_id": "L105",
+        "principal": 450000,
+        "emi_amount": 16200,
+        "outstanding_balance": 398000,
+        "interest_rate": 12.0,
+        "tenure_months": 36,
+        "emi_due_day": 20
+      },
+      "payment_history": [
+        {"month": "2025-01", "due_date": "2025-01-20", "paid_date": "2025-01-20", "amount_due": 16200, "amount_paid": 16200, "status": "on_time"},
+        {"month": "2025-02", "due_date": "2025-02-20", "paid_date": "2025-02-25", "amount_due": 16200, "amount_paid": 16200, "status": "late", "days_late": 5},
+        {"month": "2025-03", "due_date": "2025-03-20", "paid_date": "2025-03-28", "amount_due": 16200, "amount_paid": 16200, "status": "late", "days_late": 8},
+        {"month": "2025-04", "due_date": "2025-04-20", "paid_date": "2025-04-30", "amount_due": 16200, "amount_paid": 8000, "status": "partial", "days_late": 10},
+        {"month": "2025-05", "due_date": "2025-05-20", "paid_date": null, "amount_due": 16200, "amount_paid": 0, "status": "unpaid", "days_late": 33},
+        {"month": "2025-06", "due_date": "2025-06-20", "paid_date": null, "amount_due": 16200, "amount_paid": 0, "status": "unpaid", "days_late": 3}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-06-20", "status": "failed", "amount": 16200, "reason": "insufficient_funds"},
+        {"date": "2025-05-20", "status": "failed", "amount": 16200, "reason": "insufficient_funds"},
+        {"date": "2025-04-20", "status": "partial", "amount": 8000, "reason": "partial_debit"},
+        {"date": "2025-04-22", "status": "failed", "amount": 8200, "reason": "insufficient_funds"}
+      ],
+      "transactions": [
+        {"date": "2025-06-01", "type": "credit", "category": "salary", "amount": 28000},
+        {"date": "2025-05-01", "type": "credit", "category": "salary", "amount": 32000},
+        {"date": "2025-04-01", "type": "credit", "category": "salary", "amount": 52000},
+        {"date": "2025-03-01", "type": "credit", "category": "salary", "amount": 54000}
+      ],
+      "credit_line": {"limit": 120000, "utilized": 105000, "utilization_history": [55000, 72000, 88000, 105000]},
+      "current_dpd": 33
+    },
+    {
+      "borrower_id": "B106",
+      "name": "Arjun Nair",
+      "assigned_analyst": "analyst2",
+      "loan": {
+        "loan_id": "L106",
+        "principal": 150000,
+        "emi_amount": 5800,
+        "outstanding_balance": 132000,
+        "interest_rate": 13.0,
+        "tenure_months": 30,
+        "emi_due_day": 8
+      },
+      "payment_history": [
+        {"month": "2025-02", "due_date": "2025-02-08", "paid_date": "2025-02-10", "amount_due": 5800, "amount_paid": 5800, "status": "late", "days_late": 2},
+        {"month": "2025-03", "due_date": "2025-03-08", "paid_date": "2025-03-08", "amount_due": 5800, "amount_paid": 5800, "status": "on_time"},
+        {"month": "2025-04", "due_date": "2025-04-08", "paid_date": "2025-04-12", "amount_due": 5800, "amount_paid": 5800, "status": "late", "days_late": 4},
+        {"month": "2025-05", "due_date": "2025-05-08", "paid_date": "2025-05-14", "amount_due": 5800, "amount_paid": 5800, "status": "late", "days_late": 6},
+        {"month": "2025-06", "due_date": "2025-06-08", "paid_date": null, "amount_due": 5800, "amount_paid": 0, "status": "unpaid", "days_late": 14}
+      ],
+      "auto_debit_attempts": [
+        {"date": "2025-06-08", "status": "failed", "amount": 5800, "reason": "insufficient_funds"}
+      ],
+      "transactions": [
+        {"date": "2025-06-01", "type": "credit", "category": "salary", "amount": 35000},
+        {"date": "2025-05-01", "type": "credit", "category": "salary", "amount": 36000}
+      ],
+      "credit_line": {"limit": 60000, "utilized": 48000, "utilization_history": [25000, 32000, 40000, 48000]},
+      "current_dpd": 14
+    }
+  ]
+}
